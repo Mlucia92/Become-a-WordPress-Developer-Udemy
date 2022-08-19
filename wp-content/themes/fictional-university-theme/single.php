@@ -1,4 +1,6 @@
 <?php
+
+  // Aquí se verá cada single post que se cree desde el administrador.
   
   get_header();
 

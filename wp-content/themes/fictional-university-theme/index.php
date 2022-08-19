@@ -1,5 +1,7 @@
 <?php
 
+// Aquí irán los blogs. 
+
 get_header(); ?>
 
 <div class="page-banner">
