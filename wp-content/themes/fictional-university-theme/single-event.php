@@ -1,4 +1,6 @@
 <?php
+
+//Aquí podrán verse los post de Events. 
   
   get_header();
 
