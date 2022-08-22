@@ -5,20 +5,9 @@
   get_header();
 
   while(have_posts()) {
-    the_post(); ?>
-    
-    
-    <div class="page-banner">
-        <!-- Función nativa: echo get_theme_file_uri() imprime una imagen de la carpeta. -->
-      <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>)"></div>
-      <div class="page-banner__content container container--narrow">
-        <!-- Función nativa: the_title() imprime el título de la página. -->
-        <h1 class="page-banner__title"><?php the_title()?></h1>
-        <div class="page-banner__intro">
-          <p>Don't forget to replace me later</p>
-        </div>
-      </div>
-    </div>
+    the_post(); 
+    pageBanner();
+  ?>
 
     <!-- Solo queremos que este parte se vea cuando es una child-page y se oculte cuando sea una parent-page. 
     Por lo tanto, se trabaja con el número de ID, si el número es 0 es parent y si el número es 1 o mayor, es child.  -->
