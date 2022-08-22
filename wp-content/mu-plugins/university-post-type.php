@@ -50,23 +50,20 @@ function university_post_types() {
 
   // Professors post type:
 
-  register_post_type('program', array(
+  register_post_type('professor', array(
     // Con el show_in_rest se mostrará el modern block editor.
     'show_in_rest' => true,
-    'supports' => array('title', 'editor'),
-    // Lo que se verá en la URL: 
-    'rewrite' => array('slug' => 'programs'),
-    'has_archive' => true,
+    'supports' => array('title', 'editor','thumbnail'),
     // Será visto por los visitantes de la página. 
     'public' => true,
     'labels' => array(
-      'name' => 'Programs',
-      'add_new_item' => 'Add New Program',
-      'edit_item' => 'Edit Program',
-      'all_items' => 'All Programs',
-      'singular_name' => 'Program'
+      'name' => 'Professors',
+      'add_new_item' => 'Add New Professor',
+      'edit_item' => 'Edit Professor',
+      'all_items' => 'All Professors',
+      'singular_name' => 'Professor'
     ),
-    'menu_icon' => 'dashicons-awards'
+    'menu_icon' => 'dashicons-welcome-learn-more'
   ));
 }
 

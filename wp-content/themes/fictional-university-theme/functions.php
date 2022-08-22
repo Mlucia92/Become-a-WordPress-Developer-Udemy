@@ -18,6 +18,12 @@ add_action('wp_enqueue_scripts', 'university_files');
 
 function university_features() {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    // Para setear las imágenes: (nickname, width, height, si queŕes que la imagen se corte para encajar) También hay un pluging para cortar la imagen
+    // manualmente para que quede con es aspecto que querramos. 
+    add_image_size('professorLandScape', 400, 260, true);
+    add_image_size('professorPortrait', 480, 650, true);
+    add_image_size('pageBanner', 1500, 350, true);
 }
   
 add_action('after_setup_theme', 'university_features');
