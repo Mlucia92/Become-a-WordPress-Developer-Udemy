@@ -49,7 +49,7 @@ function university_post_types() {
   register_post_type('program', array(
     // Con el show_in_rest se mostrará el modern block editor.
     'show_in_rest' => true,
-    'supports' => array('title', 'editor'),
+    'supports' => array('title'),
     // Lo que se verá en la URL: 
     'rewrite' => array('slug' => 'programs'),
     'has_archive' => true,
